@@ -1,2 +1,3 @@
-# word-app
-App for android to search things of chosen words using words API
+# Corona vaccination status
+App to see the vaccination status in finland
+Hopefully more local details than country-wise.
