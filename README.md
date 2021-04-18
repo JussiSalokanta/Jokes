@@ -3,7 +3,8 @@
 
 
 ## General info
-* App to see the vaccination status in finland as final project in mobile development course
+* App to see the vaccination status in finland
+* Made as final project in mobile development course
 	
 ## Features
 ### To-do:
