@@ -3,7 +3,7 @@
 
 
 ## General info
-App to see the vaccination status in finland.
+* App to see the vaccination status in finland.
 	
 ## Features
 ### To-do:
