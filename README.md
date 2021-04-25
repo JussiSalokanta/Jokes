@@ -1,20 +1,20 @@
-# Corona vaccination status
+# Jokes
 
 
 
 ## General info
-* App to see the vaccination status in finland
+* App to get jokes
 * Made as final project in mobile development course
 	
 ## Features
 ### To-do:
- * Choose scope (country/city)
- * Data view styles (plain number/ pie-chart..)
+ * Choose scope (random / user chosen category)
+ * UI
 
   
 ## Technologies
 * Android
-* Kotlin or react-native. Not yet decided
+* react-native
 
 ## Api
-Data is from https://sampo.thl.fi/pivot/prod/api/vaccreg/cov19cov.json
+Data is from https://v2.jokeapi.dev/
