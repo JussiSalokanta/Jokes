@@ -7,9 +7,11 @@
 * Made as final project in mobile development course
 	
 ## Features
+* v1.0.0
+	* Joke and its category is fetched from jokeapi and displayed on screen
 ### To-do:
- * Choose scope (random / user chosen category)
- * UI
+ * Choose scope (Buttons for different category of jokes)
+ * UI needs improvment
 
   
 ## Technologies
