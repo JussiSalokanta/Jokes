@@ -7,6 +7,8 @@
 * Made as final project in mobile development course
 	
 ## Features
+*v1.1.0
+	* Use buttons to get jokes from different categorys
 * v1.0.0
 	* Joke and its category is fetched from jokeapi and displayed on screen
 ### To-do:
