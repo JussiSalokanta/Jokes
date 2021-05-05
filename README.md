@@ -7,6 +7,9 @@
 * Made as final project in mobile development course
 	
 ## Features
+* v1.2.0
+	* Warning button for contents
+	* More category buttons added
 * v1.1.0
 	* Use buttons to get jokes from different categorys
 * v1.0.0
