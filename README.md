@@ -15,7 +15,7 @@
 * v1.0.0
 	* Joke and its category is fetched from jokeapi and displayed on screen
 ### To-do:
- ~~ Choose scope (Buttons for different category of jokes)~~
+ ~~Choose scope (Buttons for different category of jokes)~~
  * UI needs improvment
 
   
