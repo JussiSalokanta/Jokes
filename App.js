@@ -7,9 +7,9 @@ export default App = () => {
   const [jokeType, setJokeType] = useState("");
 
  
-  console.log(data)
+ // console.log(data) // uncomment for testing purposes
 
-  
+  // Fetching data (JSON) from designated api address
   useEffect(() => {
     fetch('https://v2.jokeapi.dev/joke/' + jokeType)
       .then((response) => response.json())
@@ -18,6 +18,7 @@ export default App = () => {
       .finally(() => setLoading(false));
   }, [jokeType]);
 
+ 
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -27,9 +28,10 @@ export default App = () => {
         <StatusBar barStyle="dark-content" />
         
         <Text style={{ paddingTop: 10, paddingBottom: 10, textAlign: 'center', fontSize: 25 }}>Jokes for you:</Text>
-        
+      
         <View>
         
+  {/* Noticable button to pop up warning message about contents of some jokes */}
         <Button 
         title="Press me first!"
         color="red"
@@ -42,12 +44,14 @@ export default App = () => {
         ]
       )}
         />
-        
+         {/* Here are the buttons to use modified api address */}
         </View>
         <View style={styles.separator} />
         <View style={styles.space} />
         <Text style={{ paddingTop: 10, paddingBottom: 10, textAlign: 'center', fontSize: 25 }}>Choose your category:</Text>
-
+        
+        
+        {/* Buttons are added here*/}
         <View style={styles.fixToText}>
         <Button style={styles.button}
           onPress={() => setJokeType("Programming")}
@@ -58,7 +62,9 @@ export default App = () => {
           title="Miscellaneous"
         />
         </View>
+
         <View style={styles.space} />
+
         <View style={styles.fixToText}>
         <Button style={styles.button}
           onPress={() => setJokeType("Dark")}
@@ -73,11 +79,16 @@ export default App = () => {
 
         <View style={styles.separator} />
 
+       { /* ActivityIndicator is showing when loading. 
+            Flatlist is used to pick up data by keys from the fetched data
+            and using item."key" to print it*/ }
+
         {isLoading ? <ActivityIndicator /> : (
           <FlatList
             data={[data]}
             keyExtractor={({ id }, index) => index.toString()}
             renderItem={({ item }) => (
+
               <View>
                 <Text style={{ marginLeft: 5 }}>Category: {item.category} </Text>
                 <Text>  </Text>
@@ -107,21 +118,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 30,
     
-  },
-  item: {
-    marginLeft: 5,
-    padding: 10,
-    fontSize: 10,
-    height: 44,
-    marginHorizontal: 10,
-    marginTop: 20,
-  },
-  category: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-    marginHorizontal: 10,
-    marginTop: 20,
   },
   fixToText: {
     flexDirection: 'row',
