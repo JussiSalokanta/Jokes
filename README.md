@@ -16,6 +16,7 @@
 	* Joke and its category is fetched from jokeapi and displayed on screen
 ### To-do:
 * ~~Choose scope (Buttons for different category of jokes)~~
+* Button to skip improper jokes
  * UI needs improvment
 
   
@@ -25,3 +26,6 @@
 
 ## Api
 Data is from https://v2.jokeapi.dev/
+
+## How does it work and looks like?
+Check this video: 
