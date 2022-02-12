@@ -28,6 +28,3 @@
 
 ## Api
 Data is from https://v2.jokeapi.dev/
-
-## How does it work and looks like?
-[![Demonstration (finnish)](https://img.youtube.com/vi/jG4hrxq9cqY/0.jpg)](https://youtu.be/jG4hrxq9cqY)
